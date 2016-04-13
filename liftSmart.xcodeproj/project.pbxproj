@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0369666B1C7FB2CA00AF5006 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369666A1C7FB2CA00AF5006 /* CoreDataStack.m */; };
+		036966761C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 036966731C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.m */; };
+		036966771C7FB9F800AF5006 /* WorkoutRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 036966751C7FB9F800AF5006 /* WorkoutRecord.m */; };
+		0369667A1C801B3100AF5006 /* NewWorkoutRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 036966791C801B3100AF5006 /* NewWorkoutRecordViewController.m */; };
+		03A0207E1C7F9D1F0033F933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A0207D1C7F9D1F0033F933 /* main.m */; };
+		03A020811C7F9D1F0033F933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A020801C7F9D1F0033F933 /* AppDelegate.m */; };
+		03A020871C7F9D1F0033F933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A020851C7F9D1F0033F933 /* Main.storyboard */; };
+		03A0208A1C7F9D1F0033F933 /* liftSmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A020881C7F9D1F0033F933 /* liftSmart.xcdatamodeld */; };
+		03A0208C1C7F9D1F0033F933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A0208B1C7F9D1F0033F933 /* Assets.xcassets */; };
+		03A0208F1C7F9D1F0033F933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A0208D1C7F9D1F0033F933 /* LaunchScreen.storyboard */; };
+		03A0209A1C7F9D1F0033F933 /* liftSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A020991C7F9D1F0033F933 /* liftSmartTests.m */; };
+		03A020A51C7F9D1F0033F933 /* liftSmartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A020A41C7F9D1F0033F933 /* liftSmartUITests.m */; };
+		03D45BB81C8116CC0052A82B /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D45BB71C8116CC0052A82B /* EntryListTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03A020961C7F9D1F0033F933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A020711C7F9D1E0033F933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A020781C7F9D1E0033F933;
+			remoteInfo = liftSmart;
+		};
+		03A020A11C7F9D1F0033F933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A020711C7F9D1E0033F933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A020781C7F9D1E0033F933;
+			remoteInfo = liftSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036966691C7FB2CA00AF5006 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		0369666A1C7FB2CA00AF5006 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		036966721C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WorkoutRecord+CoreDataProperties.h"; path = "../WorkoutRecord+CoreDataProperties.h"; sourceTree = "<group>"; };
+		036966731C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WorkoutRecord+CoreDataProperties.m"; path = "../WorkoutRecord+CoreDataProperties.m"; sourceTree = "<group>"; };
+		036966741C7FB9F800AF5006 /* WorkoutRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutRecord.h; path = ../WorkoutRecord.h; sourceTree = "<group>"; };
+		036966751C7FB9F800AF5006 /* WorkoutRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutRecord.m; path = ../WorkoutRecord.m; sourceTree = "<group>"; };
+		036966781C801B3100AF5006 /* NewWorkoutRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWorkoutRecordViewController.h; sourceTree = "<group>"; };
+		036966791C801B3100AF5006 /* NewWorkoutRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWorkoutRecordViewController.m; sourceTree = "<group>"; };
+		03A020791C7F9D1F0033F933 /* liftSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liftSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A0207D1C7F9D1F0033F933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03A0207F1C7F9D1F0033F933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03A020801C7F9D1F0033F933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03A020861C7F9D1F0033F933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03A020891C7F9D1F0033F933 /* liftSmart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = liftSmart.xcdatamodel; sourceTree = "<group>"; };
+		03A0208B1C7F9D1F0033F933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03A0208E1C7F9D1F0033F933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03A020901C7F9D1F0033F933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A020951C7F9D1F0033F933 /* liftSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = liftSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A020991C7F9D1F0033F933 /* liftSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = liftSmartTests.m; sourceTree = "<group>"; };
+		03A0209B1C7F9D1F0033F933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A020A01C7F9D1F0033F933 /* liftSmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = liftSmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A020A41C7F9D1F0033F933 /* liftSmartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = liftSmartUITests.m; sourceTree = "<group>"; };
+		03A020A61C7F9D1F0033F933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D45BB61C8116CC0052A82B /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		03D45BB71C8116CC0052A82B /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A020761C7F9D1E0033F933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A020921C7F9D1F0033F933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A0209D1C7F9D1F0033F933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A020701C7F9D1E0033F933 = {
+			isa = PBXGroup;
+			children = (
+				03A0207B1C7F9D1F0033F933 /* liftSmart */,
+				03A020981C7F9D1F0033F933 /* liftSmartTests */,
+				03A020A31C7F9D1F0033F933 /* liftSmartUITests */,
+				03A0207A1C7F9D1F0033F933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03A0207A1C7F9D1F0033F933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A020791C7F9D1F0033F933 /* liftSmart.app */,
+				03A020951C7F9D1F0033F933 /* liftSmartTests.xctest */,
+				03A020A01C7F9D1F0033F933 /* liftSmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03A0207B1C7F9D1F0033F933 /* liftSmart */ = {
+			isa = PBXGroup;
+			children = (
+				03A0207F1C7F9D1F0033F933 /* AppDelegate.h */,
+				03A020801C7F9D1F0033F933 /* AppDelegate.m */,
+				03A020881C7F9D1F0033F933 /* liftSmart.xcdatamodeld */,
+				036966691C7FB2CA00AF5006 /* CoreDataStack.h */,
+				0369666A1C7FB2CA00AF5006 /* CoreDataStack.m */,
+				036966721C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.h */,
+				036966731C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.m */,
+				036966741C7FB9F800AF5006 /* WorkoutRecord.h */,
+				036966751C7FB9F800AF5006 /* WorkoutRecord.m */,
+				036966781C801B3100AF5006 /* NewWorkoutRecordViewController.h */,
+				036966791C801B3100AF5006 /* NewWorkoutRecordViewController.m */,
+				03D45BB61C8116CC0052A82B /* EntryListTableViewController.h */,
+				03D45BB71C8116CC0052A82B /* EntryListTableViewController.m */,
+				03A020851C7F9D1F0033F933 /* Main.storyboard */,
+				03A0208D1C7F9D1F0033F933 /* LaunchScreen.storyboard */,
+				03A020901C7F9D1F0033F933 /* Info.plist */,
+				03A0208B1C7F9D1F0033F933 /* Assets.xcassets */,
+				03A0207C1C7F9D1F0033F933 /* Supporting Files */,
+			);
+			path = liftSmart;
+			sourceTree = "<group>";
+		};
+		03A0207C1C7F9D1F0033F933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03A0207D1C7F9D1F0033F933 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03A020981C7F9D1F0033F933 /* liftSmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				03A020991C7F9D1F0033F933 /* liftSmartTests.m */,
+				03A0209B1C7F9D1F0033F933 /* Info.plist */,
+			);
+			path = liftSmartTests;
+			sourceTree = "<group>";
+		};
+		03A020A31C7F9D1F0033F933 /* liftSmartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03A020A41C7F9D1F0033F933 /* liftSmartUITests.m */,
+				03A020A61C7F9D1F0033F933 /* Info.plist */,
+			);
+			path = liftSmartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03A020781C7F9D1E0033F933 /* liftSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A020A91C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmart" */;
+			buildPhases = (
+				03A020751C7F9D1E0033F933 /* Sources */,
+				03A020761C7F9D1E0033F933 /* Frameworks */,
+				03A020771C7F9D1E0033F933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liftSmart;
+			productName = liftSmart;
+			productReference = 03A020791C7F9D1F0033F933 /* liftSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03A020941C7F9D1F0033F933 /* liftSmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A020AC1C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmartTests" */;
+			buildPhases = (
+				03A020911C7F9D1F0033F933 /* Sources */,
+				03A020921C7F9D1F0033F933 /* Frameworks */,
+				03A020931C7F9D1F0033F933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A020971C7F9D1F0033F933 /* PBXTargetDependency */,
+			);
+			name = liftSmartTests;
+			productName = liftSmartTests;
+			productReference = 03A020951C7F9D1F0033F933 /* liftSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03A0209F1C7F9D1F0033F933 /* liftSmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A020AF1C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmartUITests" */;
+			buildPhases = (
+				03A0209C1C7F9D1F0033F933 /* Sources */,
+				03A0209D1C7F9D1F0033F933 /* Frameworks */,
+				03A0209E1C7F9D1F0033F933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A020A21C7F9D1F0033F933 /* PBXTargetDependency */,
+			);
+			name = liftSmartUITests;
+			productName = liftSmartUITests;
+			productReference = 03A020A01C7F9D1F0033F933 /* liftSmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03A020711C7F9D1E0033F933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Joshua O'Connor";
+				TargetAttributes = {
+					03A020781C7F9D1E0033F933 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					03A020941C7F9D1F0033F933 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 03A020781C7F9D1E0033F933;
+					};
+					03A0209F1C7F9D1F0033F933 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 03A020781C7F9D1E0033F933;
+					};
+				};
+			};
+			buildConfigurationList = 03A020741C7F9D1E0033F933 /* Build configuration list for PBXProject "liftSmart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03A020701C7F9D1E0033F933;
+			productRefGroup = 03A0207A1C7F9D1F0033F933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03A020781C7F9D1E0033F933 /* liftSmart */,
+				03A020941C7F9D1F0033F933 /* liftSmartTests */,
+				03A0209F1C7F9D1F0033F933 /* liftSmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03A020771C7F9D1E0033F933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A0208F1C7F9D1F0033F933 /* LaunchScreen.storyboard in Resources */,
+				03A0208C1C7F9D1F0033F933 /* Assets.xcassets in Resources */,
+				03A020871C7F9D1F0033F933 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A020931C7F9D1F0033F933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A0209E1C7F9D1F0033F933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03A020751C7F9D1E0033F933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0369666B1C7FB2CA00AF5006 /* CoreDataStack.m in Sources */,
+				03A0208A1C7F9D1F0033F933 /* liftSmart.xcdatamodeld in Sources */,
+				036966771C7FB9F800AF5006 /* WorkoutRecord.m in Sources */,
+				0369667A1C801B3100AF5006 /* NewWorkoutRecordViewController.m in Sources */,
+				03A020811C7F9D1F0033F933 /* AppDelegate.m in Sources */,
+				036966761C7FB9F800AF5006 /* WorkoutRecord+CoreDataProperties.m in Sources */,
+				03D45BB81C8116CC0052A82B /* EntryListTableViewController.m in Sources */,
+				03A0207E1C7F9D1F0033F933 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A020911C7F9D1F0033F933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A0209A1C7F9D1F0033F933 /* liftSmartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A0209C1C7F9D1F0033F933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A020A51C7F9D1F0033F933 /* liftSmartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03A020971C7F9D1F0033F933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A020781C7F9D1E0033F933 /* liftSmart */;
+			targetProxy = 03A020961C7F9D1F0033F933 /* PBXContainerItemProxy */;
+		};
+		03A020A21C7F9D1F0033F933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A020781C7F9D1E0033F933 /* liftSmart */;
+			targetProxy = 03A020A11C7F9D1F0033F933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03A020851C7F9D1F0033F933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A020861C7F9D1F0033F933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03A0208D1C7F9D1F0033F933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A0208E1C7F9D1F0033F933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03A020A71C7F9D1F0033F933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03A020A81C7F9D1F0033F933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03A020AA1C7F9D1F0033F933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = liftSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03A020AB1C7F9D1F0033F933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = liftSmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03A020AD1C7F9D1F0033F933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = liftSmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liftSmart.app/liftSmart";
+			};
+			name = Debug;
+		};
+		03A020AE1C7F9D1F0033F933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = liftSmartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liftSmart.app/liftSmart";
+			};
+			name = Release;
+		};
+		03A020B01C7F9D1F0033F933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = liftSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = liftSmart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		03A020B11C7F9D1F0033F933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = liftSmartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.joshoconnor.liftSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = liftSmart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A020741C7F9D1E0033F933 /* Build configuration list for PBXProject "liftSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A020A71C7F9D1F0033F933 /* Debug */,
+				03A020A81C7F9D1F0033F933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A020A91C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A020AA1C7F9D1F0033F933 /* Debug */,
+				03A020AB1C7F9D1F0033F933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A020AC1C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A020AD1C7F9D1F0033F933 /* Debug */,
+				03A020AE1C7F9D1F0033F933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A020AF1C7F9D1F0033F933 /* Build configuration list for PBXNativeTarget "liftSmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A020B01C7F9D1F0033F933 /* Debug */,
+				03A020B11C7F9D1F0033F933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03A020881C7F9D1F0033F933 /* liftSmart.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03A020891C7F9D1F0033F933 /* liftSmart.xcdatamodel */,
+			);
+			currentVersion = 03A020891C7F9D1F0033F933 /* liftSmart.xcdatamodel */;
+			path = liftSmart.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03A020711C7F9D1E0033F933 /* Project object */;
+}

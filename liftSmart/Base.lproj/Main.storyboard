@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="URC-F0-F80">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Workout History-->
+        <scene sceneID="HEZ-i4-KPf">
+            <objects>
+                <tableViewController id="3f9-yq-5U9" customClass="EntryListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JTX-QY-r1K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Mq3-N4-LD2">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mq3-N4-LD2" id="jMf-iA-hSs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="IhT-Wy-feW" kind="modal" identifier="edit" id="Usp-mf-cFd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3f9-yq-5U9" id="aUu-Ph-rfD"/>
+                            <outlet property="delegate" destination="3f9-yq-5U9" id="pFH-de-szv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Workout History" id="3pT-cP-Vez">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FVH-18-YXH">
+                            <connections>
+                                <segue destination="IhT-Wy-feW" kind="modal" id="P9b-aR-gv2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6s-hh-F0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="357"/>
+        </scene>
+        <!--New Workout-->
+        <scene sceneID="my5-Ca-iaa">
+            <objects>
+                <viewController id="Gbd-9Y-lg5" customClass="NewWorkoutRecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ee0-n0-heX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jt-Jj-uQQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ctv-6X-M9K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-OU-GL8">
+                                <rect key="frame" x="86" y="83" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Workout" id="vi7-L6-L4d">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CWd-lJ-g7r">
+                            <connections>
+                                <action selector="pressedCancel:" destination="Gbd-9Y-lg5" id="m3F-6A-8sR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Rl5-kT-oIe">
+                            <connections>
+                                <action selector="pressedDone:" destination="Gbd-9Y-lg5" id="FlX-BA-vUK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="workoutTitleTextfield" destination="bcj-OU-GL8" id="L7F-GM-T85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqj-zX-yfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435" y="-357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gl8-rD-45o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="URC-F0-F80" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nyd-A8-VDq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3f9-yq-5U9" kind="relationship" relationship="rootViewController" id="aCX-7c-OoT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7m-zf-iSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PXi-tH-VOb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IhT-Wy-feW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iRx-YE-gtF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gbd-9Y-lg5" kind="relationship" relationship="rootViewController" id="Nrc-mr-ypb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9Y-5Y-qM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="-357"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Usp-mf-cFd"/>
+    </inferredMetricsTieBreakers>
+</document>
